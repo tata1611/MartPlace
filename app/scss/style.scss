@@ -2,11 +2,6 @@
 @import 'global';
 @import 'fonts';
 
-
-
-
-
-
 body{
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -55,7 +50,6 @@ body{
     }
 }
 .client{
-    text-align: center;
     display: flex;
     justify-content: space-between;
     width: 175px;
@@ -68,7 +62,7 @@ body{
         color: #0674ec;
             }
     }
-}
+ }
 
 .header__menu{
     background: #fff;
@@ -77,12 +71,8 @@ body{
 .menu{
     display: flex;
     justify-content: space-between;
-    // align-items: center;
-     text-align: center;
-    
-    
-    
-    
+    text-align: center;
+   
 }
 .menu__list{
     padding-top: 31px;
@@ -141,10 +131,67 @@ body{
         right: 0;
         top: 15px;
     &-img{
-        // color:#fff;
         width: 16px;
         height: 16px;
     }
 }
 
+// start search
 
+.search{
+    min-height: 730px;
+    background-color: $bl-maket;
+    
+}
+.search__inner{
+    padding-top: 180px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    &-title{
+        color:#fff;
+        font-weight: 400;
+        border-top: 178px;
+        span{
+            font-weight: 700;
+            line-height: 70px;
+            display: block; 
+            padding-top: 25px; 
+        }
+    }
+    &-text{
+        color:#fff;
+        font-weight: 200;
+        font-size: 20px;
+        padding: 37px 0 67px;
+    }
+
+    &-btn .all, .popular{
+        display: inline-flex;
+        width: 100%;
+        max-width: 415px;
+        margin: 0 auto;
+        text-align: center;
+        width: 192px;
+        height: 57px;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        padding: 21px 33px;
+        margin-top: 30px;
+        background-color: $bl-maket;
+        cursor: pointer;
+        margin-left: 30px;
+        &{
+            align-items: center;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+        }
+        &:hover{
+            color: $bl-maket;
+            background-color: #fff;
+        }      
+}
+}
