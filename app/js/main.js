@@ -19,6 +19,6 @@ $(function(){
         });
     
 
-    var mixer = mixitup('.container');
+    // var mixer = mixitup('.container');
     
 });

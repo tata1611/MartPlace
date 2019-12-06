@@ -59,7 +59,7 @@
                     <div class="header__search">
                         <form>
                             <input type="text" placeholder=" Search product here..." required>
-                            <button type="submit">
+                            <button type="submit" class=" header__search-btn ">
                                 <img src="images/magnifier.png" alt="">
                             </button>
                         </form>
@@ -71,7 +71,7 @@
         </div>
     </header>
 
-    <section class="sliders">
+    <section class="sliders" style="background-image: url(/images/Gradient_bg.jpg );">
         <div class="container">
             <div class="sliders__inner">
                 <div class="sliders__inner-title">
@@ -155,6 +155,7 @@
             </div>
         </div>
     </section>
+    
     <section class="slider">
         <div class="container">
             <div class="slider__item">
@@ -169,7 +170,9 @@
             <div class="slider__inner">
                 <div class="slider__item-box">
                     <div class="slider__item-box-img">
-                        <a href="#"><img src="images/BG slider.jpg" alt=""></a>
+                        <a href="#">
+                            <img src="images/BG slider.jpg" alt="">
+                        </a>
                     </div>
                     <div class="slider__item-box-r">
                         <div class="slider__item-box-r-title">
@@ -555,10 +558,8 @@
                 </div> -->
                 <div class="products__menu">
                     <div class="products__menu-btn">
-                        <button class="active" type="button">Plugins</button>
-                        <!-- <button type="button" data-filter=".category-plugins">Plugins</button> -->
-                        <button type="button">WordPress</button>
-                        <!-- <button type="button" data-filter=".category-wordpress">WordPress</button> -->
+                        <button class="active" type="button" data-filter=".category-plugins">Plugins</button>
+                        <button type="button" data-filter=".category-wordpress">WordPress</button>
                         <button type="button" data-filter=".category-siteTemplate">Site Template</button>
                         <button type="button" data-filter=".category-psdTemplate">PSD Template</button>
                         <button type="button" data-filter=".category-joomla">Joomla</button>
@@ -570,48 +571,208 @@
                 <div class="products__item">
                     <div class="products__item-box">
                         <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
-                            <button>More Info</button>
-                            <button>Live Demo</button>
-                        </div>
-                        <div class="products__item-box-title"></div>
-
-                        <div class="slider__item-box-r">
-                            <div class="slider__item-box-r-title">
-                            E-commerce Shopping Cart
+                            <div class="products__items-bottom-btn">
+                                <button type="button" data-filter=".category-moreInfo">More Info</button>
+                                <button class="active" type="button" data-filter=".category-liveDemo">Live Demo</button>
                             </div>
-                            <div class="slider__item-box-r-info">
-                                <div class="slider__item-box-r-info-autor">
-                                    <a href=""><img src="images/user.png" alt=""></a>
-                                    <a class="slider__item-box-r-info-name" href=""> Theme-Valley</a>
+                        </div>
+
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                                E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">Theme-Valley</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
                                 </div>
-                                <div class="slider__item-box-r-info-product">
+                                <div class="products__item-box-r-info-product">
                                     <img src="images/icon.svg/wordpress.svg" alt="">
                                     Plugin
                                 </div>
                             </div>
-                            <div class="slider__item-box-r-info-text">
+                            <div class="products__item-box-r-info-text">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                 the mattis, leo quam aliquet congue.
                             </div>
-                           
-                            <div class="slider__item-info-bottom">
-                                <div class="slider__item-info-bottom-price" href="">
-                                    $20
-                                </div>
-                                <div class="slider__item-info-bottom-heart" href="#"><img
-                                        src="images/icon.svg/heart.svg" alt="">90</div>
-                                <div class="slider__item-info-bottom-cart" href="#"><img src="images/icon.svg/cart.svg"
-                                        alt="">246</div>
-                                
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$20</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">90</div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">246</div>
                             </div>
                         </div>
-
-
                     </div>
 
+                    <div class="products__item-box">
+                        <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
+                        </div>
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                            Marketify Coffee Shop
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">EchoTheme</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
+                                </div>
+                                <div class="products__item-box-r-info-product">
+                                    <img src="images/icon.svg/psd.svg" alt="">
+                                    PSD
+                                </div>
+                            </div>
+                            <div class="products__item-box-r-info-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$18</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">48</div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products__item-box">
+                        <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
+                        </div>
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                                Bryson - Portfolio Template
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">Artcorner</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
+                                </div>
+                                <div class="products__item-box-r-info-product">
+                                    <img src="images/html.png" alt="">
+                                    HTML
+                                </div>
+                            </div>
+                            <div class="products__item-box-r-info-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$10</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">56</div>
+                                    <div class="rate-star"></div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">68</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item-box">
+                        <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
+                        </div>
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                            E-commerce Shopping Cart
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">Design-Hub</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
+                                </div>
+                                <div class="products__item-box-r-info-product">
+                                    <img src="images/icon.svg/wordpress.svg" alt="">
+                                    Plugin
+                                </div>
+                            </div>
+                            <div class="products__item-box-r-info-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$10-50</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">90</div>
+                                    <div class="rate-star"></div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">45</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item-box">
+                        <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
+                        </div>
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                                Marketify Coffee Shop
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">AazzTech</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
+                                </div>
+                                <div class="products__item-box-r-info-product">
+                                    <img src="images/icon.svg/psd.svg" alt="">
+                                    PSD
+                                </div>
+                            </div>
+                            <div class="products__item-box-r-info-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$10-50</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">48</div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item-box">
+                        <div class="products__item-box-photo" style="background-image: url(/images/products-bg.jpg);">
+                        </div>
+                        <div class="products__item-box-r">
+                            <div class="products__item-box-r-title">
+                                Bryson - Portfolio Template
+                            </div>
+                            <div class="products__item-box-r-info">
+                                <div class="products__item-box-r-info-autor">
+                                    <a href=""><img src="images/icon.svg/user.svg" alt="">Coder-Lab</a>
+                                    <!-- <a class="products__item-box-r-info-name" href=""> </a> -->
+                                </div>
+                                <div class="products__item-box-r-info-product">
+                                    <img src="images/html.png" alt="">
+                                    HTML
+                                </div>
+                            </div>
+                            <div class="products__item-box-r-info-text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet congue.
+                            </div>
+
+                            <div class="products__item-info-bottom">
+                                <div class="products__item-info-bottom-price" href="">$10</div>
+                                <div class="products__item-info-bottom-heart" href="#">
+                                    <img src="images/icon.svg/heart.svg" alt="">56</div>
+                                    <div class="rate-star"></div>
+                                <div class="products__item-info-bottom-cart" href="#">
+                                    <img src="images/icon.svg/cart.svg" alt="">68</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item-all">
+                        <button>All New Products</button>
+                        
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
